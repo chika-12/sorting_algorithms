@@ -13,6 +13,9 @@ void selection_sort(int *array, size_t size)
 	size_t index, idx, new;
 	int small, swap;
 
+	if (array == NULL || size < 2)
+		return;
+
 	for (index = 0; index < size; index++)
 	{
 		small = array[index];
